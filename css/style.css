@@ -3007,7 +3007,8 @@ h6 {
   .header_area {
     position: absolute; }
 
- 
+  .header_area .navbar {
+    background: #4D2E8D; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
