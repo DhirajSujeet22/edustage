@@ -158,9 +158,11 @@ button:focus {
   position: absolute;
   width: 100%;
   z-index: 99;
+  background-color: #4D2E8D;
+  color: white;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
-    background: transparent;
+    background: #4D2E8D;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
@@ -169,7 +171,7 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 14px/80px "Rubik", sans-serif;
         text-transform: capitalize;
-        color: #002347;
+        color: white;
         padding: 0px;
         display: inline-block; }
         @media (max-width: 991px) {
@@ -2907,7 +2909,7 @@ h6 {
 
 .primary-btn2 {
   display: inline-block;
-  background: #002347;
+  background: #4D2E8D;
   padding: 0px 48px;
   color: #fdc632;
   font-size: 13px;
@@ -3358,6 +3360,8 @@ h6 {
         .footer-area .footer-bottom .footer-social {
           text-align: left;
           margin-top: 20px; } }
+
+          
 
 /*---------------------------------------------------- */
 
