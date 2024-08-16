@@ -121,7 +121,9 @@ button:focus {
     font-size: 36px;
     line-height: 30px;
     font-weight: bold;
-    margin-bottom: 15px; }
+    margin-bottom: 15px; 
+    color: #4D2E8D;
+  }
     @media (max-width: 575px) {
       .main_title h2 {
         font-size: 30px;
@@ -129,7 +131,8 @@ button:focus {
   .main_title p {
     font-size: 16px;
     margin-bottom: 0px;
-    font-style: italic; }
+    font-style: italic;
+  color: grey; }
 
 .lite_bg {
   background: #f9f9f9; }
@@ -736,7 +739,9 @@ button:focus {
       margin-bottom: 20px; } }
 @media (max-width: 1024px) {
   .right-contents .single-reviews .thumb {
-    margin-right: 10px; } }
+    
+    margin-right: 10px; 
+  } }
 .right-contents .single-reviews h5 {
   display: inline-flex; }
   @media (max-width: 1024px) {
@@ -873,6 +878,10 @@ button:focus {
     position: relative; }
   .single-trainer .meta-text {
     background: #f9f9ff;
+    border: 1px solid #4D2E8D;
+    min-height: 335px;
+    border-radius: 1rem;
+    padding: 1rem 0rem;
     padding: 20px 25px;
     box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.13);
     -webkit-transition: all 0.3s ease 0s;
@@ -888,11 +897,17 @@ button:focus {
       margin-bottom: 0px; }
     .single-trainer .meta-text .designation {
       font-size: 14px;
+      color: black;
+      
       margin-bottom: 30px; }
+      .single-trainer .meta-text .designation p {
+        color: black;
+      }
+      
     .single-trainer .meta-text a {
       font-size: 14px;
       margin: 0 10px;
-      color: #cccccc;
+      color: #4D2E8D;
       -webkit-transition: all 0.3s ease 0s;
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
@@ -908,7 +923,8 @@ button:focus {
 ============================================================================================ */
 .events_area {
   padding: 130px 0 100px;
-  background: #002347; }
+  background: #002347; 
+border-bottom: 1px solid white;}
   @media (max-width: 991px) {
     .events_area {
       padding: 70px 0; } }
@@ -921,9 +937,12 @@ button:focus {
       display: inline-block; }
 
 .single_event {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-radius: 1rem;
+}
   .single_event .event_thumb {
-    overflow: hidden; }
+    overflow: hidden;
+  border-radius: 1rem; }
     .single_event .event_thumb img {
       -webkit-transition: all 0.3s ease 0s;
       -moz-transition: all 0.3s ease 0s;
@@ -936,6 +955,7 @@ button:focus {
     right: 0px;
     width: 275px;
     padding: 30px 25px;
+    border-bottom-left-radius: 50%;
     color: #ffffff; }
     .single_event .event_details .date {
       color: #ffffff;
@@ -3017,7 +3037,7 @@ h6 {
     opacity: 0; }
 
   .navbar-toggler[aria-expanded="true"] span:first-child {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg); 
     position: relative;
     top: 7.5px; }
 
@@ -3179,7 +3199,7 @@ h6 {
   /* Home Banner Area css
 	============================================================================================ */
   .home_banner_area .banner_inner .banner_content h2 {
-    font-size: 40px;
+    font-size: 33px;
     line-height: 44px; }
 
   .blog_banner .banner_inner .blog_b_text {
@@ -3363,6 +3383,32 @@ h6 {
 
           
 
+
+          .cousre__box__main{
+            border: 1px solid #4D2E8D;
+            padding: 1rem 0.4rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            color:  rgb(123, 131, 138);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          }
+          .cousre__box__main .cousre__heading{
+            color: black;
+            padding: 5px;
+          }
+          .cousre__link{
+            color: black;
+          }
+
+          @media (min-width: 0px) and (max-width: 576px) {
+            .cousre__box__main{
+              margin: 1rem;
+            }
+            .single-trainer .meta-text{
+              min-height: auto ;
+            }
+          }
+          
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
