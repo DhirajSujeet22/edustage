@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>DAFA - Login </title>
+  <title>DAFA - Sign up</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -14,10 +14,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+@media only screen and (min-width:0px) and (max-width:576px){
+  body{
+    overflow: scroll;
+  }
+}
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .wave {
@@ -267,14 +272,23 @@ inputs.forEach((input) => {
     <div class="login-content">
       <form>
         <img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg">
-        <h2 class="title">Welcome</h2>
+        <h2 class="title">Create Your Account </h2>
         <div class="input-div one">
           <div class="i">
             <i class="fas fa-user"></i>
           </div>
           <div class="div">
-            <h5>Username</h5>
-            <input type="text" class="input">
+            <!-- <h5>Full Name </h5> -->
+            <input type="text" class="input" placeholder="Full Name ">
+          </div>
+        </div>
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <!-- <h5>Username</h5> -->
+            <input type="username " class="input" placeholder="Username">
           </div>
         </div>
         <div class="input-div pass">
@@ -282,8 +296,26 @@ inputs.forEach((input) => {
             <i class="fas fa-lock"></i>
           </div>
           <div class="div">
-            <h5>Password</h5>
-            <input type="password" class="input">
+            <!-- <h5>Number</h5> -->
+            <input type="email" class="input" placeholder="Number">
+          </div>
+        </div>
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <!-- <h5>Email</h5> -->
+            <input type="email" class="input" placeholder="Email">
+          </div>
+        </div>
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <!-- <h5>Password  </h5> -->
+            <input type="password" class="input" placeholder="Password">
           </div>
         </div>
         <a href="#">Forgot Password?</a>
