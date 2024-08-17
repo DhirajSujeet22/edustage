@@ -3400,6 +3400,35 @@ h6 {
             color: black;
           }
 
+         
+          .certificatr__row{
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 2rem;
+            /* border: 1px solid white; */
+            /* flex-wrap: wrap; */
+          }
+          .certificatr__row .cerfication__img{
+            /* border: 1px solid white; */
+            padding: 1rem;
+          }
+          .certificatr__row .cerfication__img img{
+            min-width: 200px;
+            max-width: 200px;
+          }
+          .Insititute__head {
+            /* border: 1px solid white; */
+            font-size: 2rem;
+            color: white;
+          }
+          .certificate__main__row{
+            /* border: 1px solid white; */
+            padding: 2rem 0rem;
+            object-fit: contain;
+          }
           @media (min-width: 0px) and (max-width: 576px) {
             .cousre__box__main{
               margin: 1rem;
@@ -3407,8 +3436,13 @@ h6 {
             .single-trainer .meta-text{
               min-height: auto ;
             }
+            .Insititute__head{
+              font-size: 1.5rem;
+            }
+            .certificatr__row {
+              flex-wrap: wrap;
+            }
           }
-          
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
