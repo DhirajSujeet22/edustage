@@ -879,9 +879,10 @@ button:focus {
   .single-trainer .meta-text {
     background: #f9f9ff;
     border: 1px solid #4D2E8D;
-    min-height: 335px;
+    min-height: 300px;
     border-radius: 1rem;
     padding: 1rem 0rem;
+    padding-bottom: 0rem;
     padding: 20px 25px;
     box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.13);
     -webkit-transition: all 0.3s ease 0s;
