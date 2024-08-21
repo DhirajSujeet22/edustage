@@ -91,7 +91,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="signup.html"> <span><i class="bi bi-person-add"></i></span> &nbsp;Sign up </a>
               </li>
-              
+
 
             </ul>
           </div>
@@ -334,6 +334,29 @@
       </div>
     </div>
   </div>
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Initialize EmailJS
+        emailjs.init("sujal920501@gmail.com"); // Replace with your EmailJS user ID
+
+        // Collect form data
+        const formData = {
+            name: document.querySelector('input[name="name"]').value,
+            phone: document.querySelector('input[name="phone"]').value,
+            email: document.querySelector('input[name="email"]').value
+        };
+
+        // Send the email
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+        .then(function(response) {
+            alert('Email sent successfully!');
+        }, function(error) {
+            alert('Failed to send email: ' + JSON.stringify(error));
+        });
+    });
+</script>
   <!--================ End Registration Area =================-->
 
   <!--================ Start Trainers Area =================-->
@@ -538,23 +561,23 @@
             Our Insititute certified with
           </p>
         </div>
-     <div class="certificatr__row">
-      <div class="cerfication__img">
-        <img src="img/ministry of labour and employe.png" alt="" class="img-fluid">
-      </div>
-      <div class="cerfication__img">
-        <img src="img/Dpiat.png" alt="" class="img-fluid">
-      </div>
-      <div class="cerfication__img">
-        <img src="img/mca.jpg" alt="" class="img-fluid">
-      </div>
-      <div class="cerfication__img">
-        <img src="img/skill inida.jpg" alt="" class="img-fluid">
-      </div>
-      <div class="cerfication__img">
-        <img src="img/msme new.jpg" alt="" class="img-fluid">
-      </div>
-     </div>
+        <div class="certificatr__row">
+          <div class="cerfication__img">
+            <img src="img/ministry of labour and employe.png" alt="" class="img-fluid">
+          </div>
+          <div class="cerfication__img">
+            <img src="img/Dpiat.png" alt="" class="img-fluid">
+          </div>
+          <div class="cerfication__img">
+            <img src="img/mca.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="cerfication__img">
+            <img src="img/skill inida.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="cerfication__img">
+            <img src="img/msme new.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -567,7 +590,7 @@
   <footer class="footer-area section_gap">
     <div class="container">
       <div class="row">
-       
+
         <div class="col-lg-2 col-md-6 single-footer-widget">
           <h4>Quick Links</h4>
           <ul>
@@ -580,7 +603,7 @@
         <div class="col-lg-2 col-md-6 single-footer-widget">
           <h4>Courses </h4>
           <ul>
-            <li><a href="#">ADAFT cousre  </a></li>
+            <li><a href="#">ADAFT cousre </a></li>
             <li><a href="about-us.html">CIAT cousre </a></li>
             <li><a href="#">DTC cousre </a></li>
             <li><a href="#">CPSD cousre </a></li>
