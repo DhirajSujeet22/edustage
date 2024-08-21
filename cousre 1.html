@@ -1,593 +1,564 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Courses</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <style>
-    .page-header {
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Courses</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .page-header {
     background-color: #007bff;
     color: white;
     padding: 10px 0;
     text-align: center;
-}
+  }
 
-.page-title {
+  .page-title {
     margin: 0;
     font-size: 2em;
-}
+  }
 
-.main-content {
+  .main-content {
     padding: 20px;
-}
+  }
 
-.section-title {
+  .section-title {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #4D2E8D;
     font-weight: 700;
-}
+  }
 
-.subsection-title {
+  .subsection-title {
     font-size: 1.2em;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #4D2E8D;
-}
+  }
 
-.course-description, .course-details, .course-duration, .course-eligibility, .modules-description {
+  .course-description,
+  .course-details,
+  .course-duration,
+  .course-eligibility,
+  .modules-description {
     margin-bottom: 20px;
     color: black;
-}
+  }
 
-.curriculum-list, .career-opportunities, .features-benefits {
+  .curriculum-list,
+  .career-opportunities,
+  .features-benefits {
     list-style-type: disc;
     margin-left: 20px;
     color: black;
-}
+  }
 
-.curriculum-list li, .career-opportunities li, .features-benefits li {
+  .curriculum-list li,
+  .career-opportunities li,
+  .features-benefits li {
     margin-bottom: 5px;
-}
+  }
 
-.module-details {
+  .module-details {
     margin-bottom: 30px;
-}
+  }
 
-.module-title {
+  .module-title {
     font-size: 1.1em;
     margin-top: 15px;
     margin-bottom: 10px;
     color: #4D2E8D;
     font-weight: 600;
-    
-}
 
-.module-content {
+  }
+
+  .module-content {
     list-style-type: circle;
     margin-left: 20px;
     color: black;
-}
+  }
 
-.module-content li {
+  .module-content li {
     margin-bottom: 5px;
-}
-.curriculum-description {
-  color: black;
-}
+  }
 
-  </style>
+  .curriculum-description {
+    color: black;
+  }
+</style>
 
-  <body>
-    <!--================ Start Header Menu Area =================-->
-    <header class="header_area">
-      <div class="main_menu">
-        <div class="search_input" id="search_input_box">
-          <div class="container">
-            <form class="d-flex justify-content-between" method="" action="">
-              <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-              <button type="submit" class="btn"></button>
-              <span class="ti-close" id="close_search" title="Close Search"></span>
-            </form>
-          </div>
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <div class="search_input" id="search_input_box">
+        <div class="container">
+          <form class="d-flex justify-content-between" method="" action="">
+            <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+            <button type="submit" class="btn"></button>
+            <span class="ti-close" id="close_search" title="Close Search"></span>
+          </form>
         </div>
-  
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="index.html"><img src="img/logo3-removebg-preview.png" alt=""
-                width="100"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-              <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About</a>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false">Courses</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="cousre 1.html">Course 1</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="courses2.html">Course 2</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="course 3.html">Course 3</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="cousre4.html">Course 4</a>
-                    </li>
-                    <!-- <li class="nav-item">
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo3-removebg-preview.png" alt=""
+              width="100"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="cousre 1.html">Course 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses2.html">Course 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="course 3.html">Course 3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cousre4.html">Course 4</a>
+                  </li>
+                  <!-- <li class="nav-item">
                       <a class="nav-link" href="elements.html">Elements</a>
                     </li> -->
-                  </ul>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-  
-                <li class="nav-item submenu dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false">Login </a>
-  
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false"> <span><i class="bi bi-person-add"></i></span> &nbsp;Signup </a>
-  
-                </li>
-  
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!--================ End Header Menu Area =================-->
+                </ul>
+              </li>
 
-    <!--================Home Banner Area =================-->
-    <section class="banner_area">
-      <div class="banner_inner d-flex align-items-center">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="banner_content text-center">
-                <h2>Courses</h2>
-                <div class="page_link">
-                  <a href="index.html">Home</a>
-                  <a href="courses.html">Courses  1</a>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Login </a>
+
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false"> <span><i class="bi bi-person-add"></i></span> &nbsp;Signup </a>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--================Home Banner Area =================-->
+  <section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="banner_content text-center">
+              <h2>Courses</h2>
+              <div class="page_link">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses 1</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--================End Home Banner Area =================-->
-
-    <!--================ Start Popular Courses Area =================-->
-    <div class="popular_courses section_gap_top" style="padding-top: 2rem;">
-      <div class="container">
-
-        <div class="row">
-          <!-- single course -->
-          <main class="main-content">
-            <section class="course-overview">
-                <h2 class="section-title">Advance Diploma in Accounting, Finance & Taxation (ADAFT)</h2>
-                <p class="course-description">
-                    Advance Diploma in Accounting, Finance and Taxation is a comprehensive course designed to equip students with essential knowledge and skills in these areas. It is a valuable course for individuals looking to build or advance their careers in the finance and accounting domains. Delhi Academy of Accounts & Finance offer this program thereby providing practical and theoretical insights necessary for a career in finance, accounting, and taxation. Here are some details about these courses:
-                </p>
-                <h3 class="subsection-title">Course Overview</h3>
-                <p class="course-details">
-                    This course is designed to provide a comprehensive understanding of accounting principles and practices and to develop expertise in taxation laws and practices in India. The Delhi Accounts & Finance Academy ensures to impart knowledge of financial management and analysis as well as to prepare students for various roles in finance and accounting sectors.
-                </p>
-                <h3 class="subsection-title">Curriculum</h3>
-                <p class="curriculum-description">
-                    Typically, the course includes subjects such as:
-                </p>
-                <ul class="curriculum-list">
-                    <li>Financial Accounting</li>
-                    <li>Income Tax</li>
-                    <li>GST (Goods and Services Tax)</li>
-                    <li>Corporate Law</li>
-                    <li>Auditing</li>
-                    <li>Financial Management</li>
-                    <li>Budgeting and Forecasting</li>
-                    <li>Financial Reporting</li>
-                    <li>Extensive knowledge of Tally software</li>
-                    <li>Extensive knowledge of tax filing software</li>
-                </ul>
-                <h3 class="subsection-title">Duration</h3>
-                <p class="course-duration">
-                    The duration of this course is 6 months wherein there are about 350 hours of training including over 100 hours of practical training.
-                </p>
-                <h3 class="subsection-title">Eligibility</h3>
-                <p class="course-eligibility">
-                    Generally, candidates who have completed their 12th grade (10+2) in any stream are eligible. Also, this course is designed for all such graduate and post-graduate students who are looking to make a career in the high-demanding sector of accounting, finance, and taxation.
-                </p>
-                <h3 class="subsection-title">Career Opportunities</h3>
-                <ul class="career-opportunities">
-                    <li>Accountant</li>
-                    <li>Tax Consultant</li>
-                    <li>Financial Analyst</li>
-                    <li>Accounts Executive</li>
-                    <li>Finance Manager</li>
-                    <li>Payroll Expert</li>
-                </ul>
-                <h3 class="subsection-title">Key Features & Benefits</h3>
-                <ul class="features-benefits">
-                    <li>Course designed by expert Chartered Accountants (CAs).</li>
-                    <li>Regular live and practical classes conducted by experienced CA faculties.</li>
-                    <li>Enhanced understanding of financial statements and their analysis.</li>
-                    <li>Hands-on training in GST, TDS & Income Tax.</li>
-                    <li>Proficiency in using accounting software and tools.</li>
-                    <li>In-depth knowledge of Indian taxation laws.</li>
-                    <li>Improved job prospects in the finance and accounting sectors.</li>
-                    <li>Live projects and industrial training.</li>
-                    <li>Recognized Diploma Certificate upon completion.</li>
-                    <li>100% Job assistance.</li>
-                </ul>
-            </section>
-    
-            <section class="course-modules">
-                <h2 class="section-title">Course Modules – Advance Diploma in Accounting, Finance & Taxation (ADAFT)</h2>
-                <p class="modules-description">
-                    The ADAFT course includes ten modules and ten projects, with over 150 hours of practical training. The modules cover all essential aspects of accounting concepts, Income Tax, GST, Audit & Corporate Law ensuring a thorough understanding and practical application.
-                </p>
-                <div class="module-details">
-                    <h3 class="module-title">Module 1: Accounting Concepts</h3>
-                    <ul class="module-content">
-                        <li>Fundamentals of accounting entries and core accounting concepts.</li>
-                        <li>Preparation and management of various accounting registers such as Vouchers, Cash Book, Bank Book, Journal Register, Purchase/Sale Register, Fixed Assets Register, and Stock Register.</li>
-                        <li>Creation of Bank Reconciliation Statements, Purchase Orders (PO), Sales Invoices, and Quotations.</li>
-                        <li>Practical Q/A on accounting concepts.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 2: Financial Statements</h3>
-                    <ul class="module-content">
-                        <li>Preparation of Trading Accounts and Profit & Loss Accounts.</li>
-                        <li>Drafting of Balance Sheet and introduction to the regulatory requirement of Balance Sheets.</li>
-                        <li>Learning depreciation work out and accounting entries of depreciation.</li>
-                        <li>Learning analysis of Balance Sheet, PL A/c and introduction to key ratios.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 3: E-Accounting with Tally</h3>
-                    <ul class="module-content">
-                        <li>Introduction and practical guide to Tally ERP software.</li>
-                        <li>Company creation in Tally software.</li>
-                        <li>Posting entries, creating, viewing, and amending ledgers in Tally.</li>
-                        <li>Creating groups and cost centres and extracting various reports using Tally software.</li>
-                        <li>Learning invoice preparation using Tally software.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 4: Income Tax</h3>
-                    <ul class="module-content">
-                        <li>Introduction to Income Tax.</li>
-                        <li>Determining the Residential Status of an assessee.</li>
-                        <li>Understanding various Heads of Income.</li>
-                        <li>Deductions from Total Income.</li>
-                        <li>Set-off and carry forward of losses.</li>
-                        <li>Computation of Income Tax.</li>
-                        <li>Introduction to the Income Tax portal.</li>
-                        <li>Understanding Tax credit statements & AIS/MIS.</li>
-                        <li>E-Filing of Income Tax Returns & Forms.</li>
-                        <li>Concepts and computation of TDS.</li>
-                        <li>Generating TDS Challans.</li>
-                        <li>PAN application and its procedure.</li>
-                        <li>Practical training on E-TDS Return filing using software.</li>
-                        <li>Preparing Challan 281 and 280.</li>
-                        <li>Introduction to Tax Audit procedures.</li>
-                        <li>Forms 3CD, 3CA & 3CB.</li>
-                        <li>Income Tax assessment procedures.</li>
-                        <li>Handling Income Tax notices.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 5: Goods & Service Tax</h3>
-                    <ul class="module-content">
-                        <li>Introduction to GST.</li>
-                        <li>GST registration process and filing of various GST returns.</li>
-                        <li>Understanding concepts of Supply and Input Tax Credit (ITC).</li>
-                        <li>Meaning and scope of Supply & Value of Supply.</li>
-                        <li>Introduction to GST credit statements and ledgers.</li>
-                        <li>ITC under GST & Reverse Charge Mechanism (RCM).</li>
-                        <li>Invoicing and Tax payment under GST regime.</li>
-                        <li>Scope of Credit Notes & Debit Notes under GST.</li>
-                        <li>Online preparation and filing of GST returns.</li>
-                        <li>Data reconciliation and handling mismatches.</li>
-                        <li>E-Invoicing under GST regime.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 6: Payroll & Provident Fund/Labour Laws</h3>
-                    <ul class="module-content">
-                        <li>Preparation of payroll sheets.</li>
-                        <li>Introduction to PF & ESI and its use in payroll sheet.</li>
-                        <li>Preparation of Salary Slip.</li>
-                        <li>Maintenance of payroll records.</li>
-                        <li>Introduction to PF & ESI registration and its compliances.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 7: Auditing & ROC</h3>
-                    <ul class="module-content">
-                        <li>Introduction to audit and type of audits.</li>
-                        <li>Significance of audit for corporate & business.</li>
-                        <li>Preparing different audit reports.</li>
-                        <li>Registration process of companies to ROC.</li>
-                        <li>Introduction to ROC records such as Board Resolution, Minutes, and registers.</li>
-                        <li>Filing different returns to Registrar of companies.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 8: Capital Market</h3>
-                    <ul class="module-content">
-                        <li>Introduction to Stock market.</li>
-                        <li>Introduction to D-Mat Account.</li>
-                        <li>Concept of share, mutual fund & other funds in stock market.</li>
-                        <li>Concept of trading and investments in stock exchanges.</li>
-                        <li>Concept of IPO and listing of shares.</li>
-                        <li>Live trading session with real-time examples.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 9: Basic Computer Course</h3>
-                    <ul class="module-content">
-                        <li>Introduction to computer hardware and software.</li>
-                        <li>Practical training on MS Word and MS Excel, focusing on their use in industrial accounting.</li>
-                        <li>Skill development in business correspondence via email.</li>
-                        <li>Data preservation techniques and digital record backup training.</li>
-                    </ul>
-                </div>
-                <div class="module-details">
-                    <h3 class="module-title">Module 10: Live Projects & Workshop</h3>
-                    <ul class="module-content">
-                        <li>Practical training using live data from companies.</li>
-                        <li>Learning real-time returns preparation on Govt. authorized portals.</li>
-                        <li>Engagement with live projects and industry visits for practical exposure.</li>
-                        <li>Business correspondence and departmental presentation.</li>
-                        <li>Workshop on communication and skill development program.</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
         </div>
       </div>
     </div>
-    <!--================ End Popular Courses Area =================-->
+  </section>
+  <!--================End Home Banner Area =================-->
 
-    <!--================ Start Registration Area =================-->
-    <div class="section_gap registration_area">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <div class="row clock_sec clockdiv" id="clockdiv">
-                <div class="col-lg-12">
-                  <h1 class="mb-3">Register Now</h1>
-                  <p>
-                    There is a moment in the life of any aspiring astronomer that
-                    it is time to buy that first telescope. It’s exciting to think
-                    about setting up your own viewing station.
-                  </p>
-                </div>
-                <div class="col clockinner1 clockinner">
-                  <h1 class="days">150</h1>
-                  <span class="smalltext">Days</span>
-                </div>
-                <div class="col clockinner clockinner1">
-                  <h1 class="hours">23</h1>
-                  <span class="smalltext">Hours</span>
-                </div>
-                <div class="col clockinner clockinner1">
-                  <h1 class="minutes">47</h1>
-                  <span class="smalltext">Mins</span>
-                </div>
-                <div class="col clockinner clockinner1">
-                  <h1 class="seconds">59</h1>
-                  <span class="smalltext">Secs</span>
-                </div>
-              </div>
+  <!--================ Start Popular Courses Area =================-->
+  <div class="popular_courses section_gap_top" style="padding-top: 2rem;">
+    <div class="container">
+
+      <div class="row">
+        <!-- single course -->
+        <main class="main-content">
+          <section class="course-overview">
+            <h2 class="section-title">Advance Diploma in Accounting, Finance & Taxation (ADAFT)</h2>
+            <p class="course-description">
+              Advance Diploma in Accounting, Finance and Taxation is a comprehensive course designed to equip students
+              with essential knowledge and skills in these areas. It is a valuable course for individuals looking to
+              build or advance their careers in the finance and accounting domains. Delhi Academy of Accounts & Finance
+              offer this program thereby providing practical and theoretical insights necessary for a career in finance,
+              accounting, and taxation. Here are some details about these courses:
+            </p>
+            <h3 class="subsection-title">Course Overview</h3>
+            <p class="course-details">
+              This course is designed to provide a comprehensive understanding of accounting principles and practices
+              and to develop expertise in taxation laws and practices in India. The Delhi Accounts & Finance Academy
+              ensures to impart knowledge of financial management and analysis as well as to prepare students for
+              various roles in finance and accounting sectors.
+            </p>
+            <h3 class="subsection-title">Curriculum</h3>
+            <p class="curriculum-description">
+              Typically, the course includes subjects such as:
+            </p>
+            <ul class="curriculum-list">
+              <li>Financial Accounting</li>
+              <li>Income Tax</li>
+              <li>GST (Goods and Services Tax)</li>
+              <li>Corporate Law</li>
+              <li>Auditing</li>
+              <li>Financial Management</li>
+              <li>Budgeting and Forecasting</li>
+              <li>Financial Reporting</li>
+              <li>Extensive knowledge of Tally software</li>
+              <li>Extensive knowledge of tax filing software</li>
+            </ul>
+            <h3 class="subsection-title">Duration</h3>
+            <p class="course-duration">
+              The duration of this course is 6 months wherein there are about 350 hours of training including over 100
+              hours of practical training.
+            </p>
+            <h3 class="subsection-title">Eligibility</h3>
+            <p class="course-eligibility">
+              Generally, candidates who have completed their 12th grade (10+2) in any stream are eligible. Also, this
+              course is designed for all such graduate and post-graduate students who are looking to make a career in
+              the high-demanding sector of accounting, finance, and taxation.
+            </p>
+            <h3 class="subsection-title">Career Opportunities</h3>
+            <ul class="career-opportunities">
+              <li>Accountant</li>
+              <li>Tax Consultant</li>
+              <li>Financial Analyst</li>
+              <li>Accounts Executive</li>
+              <li>Finance Manager</li>
+              <li>Payroll Expert</li>
+            </ul>
+            <h3 class="subsection-title">Key Features & Benefits</h3>
+            <ul class="features-benefits">
+              <li>Course designed by expert Chartered Accountants (CAs).</li>
+              <li>Regular live and practical classes conducted by experienced CA faculties.</li>
+              <li>Enhanced understanding of financial statements and their analysis.</li>
+              <li>Hands-on training in GST, TDS & Income Tax.</li>
+              <li>Proficiency in using accounting software and tools.</li>
+              <li>In-depth knowledge of Indian taxation laws.</li>
+              <li>Improved job prospects in the finance and accounting sectors.</li>
+              <li>Live projects and industrial training.</li>
+              <li>Recognized Diploma Certificate upon completion.</li>
+              <li>100% Job assistance.</li>
+            </ul>
+          </section>
+
+          <section class="course-modules">
+            <h2 class="section-title">Course Modules – Advance Diploma in Accounting, Finance & Taxation (ADAFT)</h2>
+            <p class="modules-description">
+              The ADAFT course includes ten modules and ten projects, with over 150 hours of practical training. The
+              modules cover all essential aspects of accounting concepts, Income Tax, GST, Audit & Corporate Law
+              ensuring a thorough understanding and practical application.
+            </p>
+            <div class="module-details">
+              <h3 class="module-title">Module 1: Accounting Concepts</h3>
+              <ul class="module-content">
+                <li>Fundamentals of accounting entries and core accounting concepts.</li>
+                <li>Preparation and management of various accounting registers such as Vouchers, Cash Book, Bank Book,
+                  Journal Register, Purchase/Sale Register, Fixed Assets Register, and Stock Register.</li>
+                <li>Creation of Bank Reconciliation Statements, Purchase Orders (PO), Sales Invoices, and Quotations.
+                </li>
+                <li>Practical Q/A on accounting concepts.</li>
+              </ul>
             </div>
-            <div class="col-lg-4 offset-lg-1">
-              <div class="register_form">
-                <h3>Courses for Free</h3>
-                <p>It is high time for learning</p>
-                <form class="form_area" id="myForm" action="mail.html" method="post">
-                  <div class="row">
-                    <div class="col-lg-12 form_group">
-                      <input name="name" placeholder="Your Name" required="" type="text">
-                      <input name="name" placeholder="Your Phone Number" required="" type="tel">
-                      <input name="email" placeholder="Your Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email">
-                    </div>
-                    <div class="col-lg-12 text-center">
-                      <button class="primary-btn">Submit</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 2: Financial Statements</h3>
+              <ul class="module-content">
+                <li>Preparation of Trading Accounts and Profit & Loss Accounts.</li>
+                <li>Drafting of Balance Sheet and introduction to the regulatory requirement of Balance Sheets.</li>
+                <li>Learning depreciation work out and accounting entries of depreciation.</li>
+                <li>Learning analysis of Balance Sheet, PL A/c and introduction to key ratios.</li>
+              </ul>
             </div>
-          </div>
-        </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 3: E-Accounting with Tally</h3>
+              <ul class="module-content">
+                <li>Introduction and practical guide to Tally ERP software.</li>
+                <li>Company creation in Tally software.</li>
+                <li>Posting entries, creating, viewing, and amending ledgers in Tally.</li>
+                <li>Creating groups and cost centres and extracting various reports using Tally software.</li>
+                <li>Learning invoice preparation using Tally software.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 4: Income Tax</h3>
+              <ul class="module-content">
+                <li>Introduction to Income Tax.</li>
+                <li>Determining the Residential Status of an assessee.</li>
+                <li>Understanding various Heads of Income.</li>
+                <li>Deductions from Total Income.</li>
+                <li>Set-off and carry forward of losses.</li>
+                <li>Computation of Income Tax.</li>
+                <li>Introduction to the Income Tax portal.</li>
+                <li>Understanding Tax credit statements & AIS/MIS.</li>
+                <li>E-Filing of Income Tax Returns & Forms.</li>
+                <li>Concepts and computation of TDS.</li>
+                <li>Generating TDS Challans.</li>
+                <li>PAN application and its procedure.</li>
+                <li>Practical training on E-TDS Return filing using software.</li>
+                <li>Preparing Challan 281 and 280.</li>
+                <li>Introduction to Tax Audit procedures.</li>
+                <li>Forms 3CD, 3CA & 3CB.</li>
+                <li>Income Tax assessment procedures.</li>
+                <li>Handling Income Tax notices.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 5: Goods & Service Tax</h3>
+              <ul class="module-content">
+                <li>Introduction to GST.</li>
+                <li>GST registration process and filing of various GST returns.</li>
+                <li>Understanding concepts of Supply and Input Tax Credit (ITC).</li>
+                <li>Meaning and scope of Supply & Value of Supply.</li>
+                <li>Introduction to GST credit statements and ledgers.</li>
+                <li>ITC under GST & Reverse Charge Mechanism (RCM).</li>
+                <li>Invoicing and Tax payment under GST regime.</li>
+                <li>Scope of Credit Notes & Debit Notes under GST.</li>
+                <li>Online preparation and filing of GST returns.</li>
+                <li>Data reconciliation and handling mismatches.</li>
+                <li>E-Invoicing under GST regime.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 6: Payroll & Provident Fund/Labour Laws</h3>
+              <ul class="module-content">
+                <li>Preparation of payroll sheets.</li>
+                <li>Introduction to PF & ESI and its use in payroll sheet.</li>
+                <li>Preparation of Salary Slip.</li>
+                <li>Maintenance of payroll records.</li>
+                <li>Introduction to PF & ESI registration and its compliances.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 7: Auditing & ROC</h3>
+              <ul class="module-content">
+                <li>Introduction to audit and type of audits.</li>
+                <li>Significance of audit for corporate & business.</li>
+                <li>Preparing different audit reports.</li>
+                <li>Registration process of companies to ROC.</li>
+                <li>Introduction to ROC records such as Board Resolution, Minutes, and registers.</li>
+                <li>Filing different returns to Registrar of companies.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 8: Capital Market</h3>
+              <ul class="module-content">
+                <li>Introduction to Stock market.</li>
+                <li>Introduction to D-Mat Account.</li>
+                <li>Concept of share, mutual fund & other funds in stock market.</li>
+                <li>Concept of trading and investments in stock exchanges.</li>
+                <li>Concept of IPO and listing of shares.</li>
+                <li>Live trading session with real-time examples.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 9: Basic Computer Course</h3>
+              <ul class="module-content">
+                <li>Introduction to computer hardware and software.</li>
+                <li>Practical training on MS Word and MS Excel, focusing on their use in industrial accounting.</li>
+                <li>Skill development in business correspondence via email.</li>
+                <li>Data preservation techniques and digital record backup training.</li>
+              </ul>
+            </div>
+            <div class="module-details">
+              <h3 class="module-title">Module 10: Live Projects & Workshop</h3>
+              <ul class="module-content">
+                <li>Practical training using live data from companies.</li>
+                <li>Learning real-time returns preparation on Govt. authorized portals.</li>
+                <li>Engagement with live projects and industry visits for practical exposure.</li>
+                <li>Business correspondence and departmental presentation.</li>
+                <li>Workshop on communication and skill development program.</li>
+              </ul>
+            </div>
+          </section>
+        </main>
       </div>
-      <!--================ End Registration Area =================-->
+    </div>
+  </div>
+  <!--================ End Popular Courses Area =================-->
 
-    <!--================ Start Feature Area =================-->
-    <section class="feature_area section_gap">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="main_title">
-              <h2 class="mb-3">Awesome Feature</h2>
+  <!--================ Start Registration Area =================-->
+  <div class="section_gap registration_area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="row clock_sec clockdiv" id="clockdiv">
+            <div class="col-lg-12">
+              <h1 class="mb-3">Register Now</h1>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+                There is a moment in the life of any aspiring astronomer that
+                it is time to buy that first telescope. It’s exciting to think
+                about setting up your own viewing station.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-student"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Scholarship Facility</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
+            <div class="col clockinner1 clockinner">
+              <h1 class="days">150</h1>
+              <span class="smalltext">Days</span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-book"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Sell Online Course</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="hours">23</h1>
+              <span class="smalltext">Hours</span>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="single_feature">
-              <div class="icon"><span class="flaticon-earth"></span></div>
-              <div class="desc">
-                <h4 class="mt-3 mb-2">Global Certification</h4>
-                <p>
-                  One make creepeth, man bearing theira firmament won't great
-                  heaven
-                </p>
-              </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="minutes">47</h1>
+              <span class="smalltext">Mins</span>
+            </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="seconds">59</h1>
+              <span class="smalltext">Secs</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--================ End Feature Area =================-->
-
-    <!--================ Start footer Area  =================-->
-    <footer class="footer-area section_gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Courses </h4>
-            <ul>
-              <li><a href="index.html">Accounting Courses</a></li>
-              <li><a href="#">Taxation Training</a></li>
-              <li><a href="#">Financial Tools</a></li>
-              <li><a href="#">Career Services</a></li>
-            </ul>
-  
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us </a></li>
-              <li><a href="#">Contact us </a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Features</h4>
-            <ul>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">Guides</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Experts</a></li>
-              <li><a href="#">Agencies</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 single-footer-widget">
-            <h4>Newsletter</h4>
-            <p>You can trust us. we only send promo offers,</p>
-            <div class="form-wrap" id="mc_embed_signup">
-              <form target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get" class="form-inline">
-                <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your Email Address'" required="" type="email">
-                <button class="click-btn btn btn-default">
-                  <span>subscribe</span>
-                </button>
-                <div style="position: absolute; left: -5000px;">
-                  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+        <div class="col-lg-4 offset-lg-1">
+          <div class="register_form">
+            <h3>Courses for Free</h3>
+            <p>It is high time for learning</p>
+            <form class="form_area" id="myForm" action="mail.html" method="post">
+              <div class="row">
+                <div class="col-lg-12 form_group">
+                  <input name="name" placeholder="Your Name" required="" type="text">
+                  <input name="name" placeholder="Your Phone Number" required="" type="tel">
+                  <input name="email" placeholder="Your Email Address"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email">
                 </div>
-  
-                <div class="info"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="row footer-bottom d-flex justify-content-between">
-          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved By <a href="index.html">
-              DAFA</a> <i class="ti-heart" aria-hidden="true"></i> Design and Develop By HTPL Software technology
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
+                <div class="col-lg-12 text-center">
+                  <button class="primary-btn">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
-    <!--================ End footer Area  =================-->
+    </div>
+  </div>
+  <!--================ End Registration Area =================-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/owl-carousel-thumb.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="../maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
-  </body>
+ 
+
+  <!--================ Start footer Area  =================-->
+  <footer class="footer-area section_gap">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us </a></li>
+            <li><a href="contact.html">Contact us </a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Courses </h4>
+          <ul>
+            <li><a href="#">ADAFT cousre </a></li>
+            <li><a href="about-us.html">CIAT cousre </a></li>
+            <li><a href="#">DTC cousre </a></li>
+            <li><a href="#">CPSD cousre </a></li>
+          </ul>
+
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Experts</a></li>
+            <li><a href="#">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 single-footer-widget">
+          <h4>Newsletter</h4>
+          <p>You can trust us. we only send promo offers,</p>
+          <div class="form-wrap" id="mc_embed_signup">
+            <form target="_blank"
+              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+              method="get" class="form-inline">
+              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Your Email Address'" required="" type="email">
+              <button class="click-btn btn btn-default">
+                <span>subscribe</span>
+              </button>
+              <div style="position: absolute; left: -5000px;">
+                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+              </div>
+
+              <div class="info"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom d-flex justify-content-between">
+        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved By <a href="index.html">
+            DAFA</a> <i class="ti-heart" aria-hidden="true"></i> Design and Develop By <a href="#"> HTPL </a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+        <div class="col-lg-4 col-sm-12 footer-social">
+          <a href="#"><i class="ti-facebook"></i></a>
+          <a href="#"><i class="ti-twitter"></i></a>
+          <a href="#"><i class="ti-dribbble"></i></a>
+          <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================ End footer Area  =================-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="../maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+
 </html>
