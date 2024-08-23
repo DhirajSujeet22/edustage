@@ -892,7 +892,10 @@ button:focus {
     background: #ffffff; }
     @media (max-width: 991px) {
       .single-trainer .meta-text {
-        padding: 20px 20px; } }
+        padding: 20px 20px; }
+        .single-trainer .meta-text {
+          min-height: 200px !important;
+        } }
     .single-trainer .meta-text h4 {
       font-size: 20px;
       margin-bottom: 0px; }
@@ -3442,8 +3445,46 @@ h6 {
             }
             .certificatr__row {
               flex-wrap: wrap;
+              width: 75vw;
+
             }
+            .certificatr__row .cerfication__img {
+              padding: 5px;
+            }
+            
+.certificate__main__row{
+  align-items: center;
+  justify-content: center;
+}
           }
+        @media only screen and (min-width:576px) and (max-width:768px){
+          .course___row{
+            flex-wrap: wrap;
+          }
+          .cousre__box__main {
+            margin: 1rem 0rem;
+          }
+          .single-trainer .meta-text {
+            min-height: 200px !important;
+          }
+          
+        }
+
+        @media only screen and (min-width:768px) and (max-width:992px){
+          .certificatr__row {
+            flex-wrap: wrap;
+          }
+          .home_banner_area .banner_inner .banner_content h2{
+            font-size: 35px !important;
+          }
+        }
+        @media only screen and (min-width:992px) and (max-width:1200px){
+          .certificatr__row {
+            flex-wrap: wrap;
+          }
+        }
+        
+          
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
